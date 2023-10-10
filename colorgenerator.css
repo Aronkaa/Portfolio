@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li,
+a,
+button {
+  font-family: "Inconsolata", monospace;
+  font-size: 22px;
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  transition: background-color 1s ease;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.colorgenerator-main {
+  text-align: center;
+}
+#btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: black solid 2px;
+  margin-top: 15px;
+}
+h1,
+button {
+  font-family: "Inconsolata", monospace;
+}
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media screen and (max-width: 800px) {
+  img {
+    width: 200px;
+  }
+}

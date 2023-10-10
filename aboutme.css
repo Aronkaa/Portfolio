@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  font-size: 22px;
+  font-weight: 200px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a,
+p,
+span,
+.dropbtn {
+  font-family: "Inconsolata", monospace;
+  color: white;
+}
+body {
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutme-main-section {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+.aboutme-main-section img {
+  height: 600px;
+  border-radius: 10px;
+  border: solid white 3px;
+  margin-left: 85px;
+  margin-top: 45px;
+}
+
+.row-1 {
+  font-size: 50px;
+}
+.row-2 {
+  color: #68aaff;
+  font-size: 30px;
+}
+.row-3 {
+  font-size: 30px;
+  padding-right: 25px;
+}
+.aboutme-content {
+  margin-left: 55px;
+  margin-right: 120px;
+  padding-right: 80px;
+  margin-top: 45px;
+}
+.aboutme-info {
+  display: flex;
+  gap: 1rem;
+  font-size: 25px;
+  padding-top: 25px;
+}
+.aboutme-info1 {
+  width: clamp(7rem, 10vw, 10vw);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.aboutme-info2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 15px;
+}
+.downloadbtn {
+  padding-left: 100px;
+  padding-top: 25px;
+}
+.cvbutton {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px;
+  background: rgba(0, 0, 0, 0.09);
+}
+.downloadcv i {
+  padding-right: 10px;
+}
+.cvspan {
+  display: block;
+  padding: 25px 80px;
+}
+.cvbutton::before,
+.cvbutton::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+
+.cvspan::before,
+.cvspan::after {
+  content: "";
+  width: 2px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+.cvbutton:hover::before,
+.cvbutton:hover::after {
+  width: 100%;
+}
+.cvbutton:hover .cvspan::before,
+.cvbutton:hover .cvspan::after {
+  height: 100%;
+}
+.cvbutton::before,
+.cvbutton::after {
+  transition-delay: 0.2s;
+}
+.cvbutton .cvspan::before,
+.cvbutton .cvspan::after {
+  transition-delay: 0s;
+}
+.cvbutton::before {
+  right: 0;
+  top: 0;
+}
+.cvbutton::after {
+  left: 0;
+  bottom: 0;
+}
+.cvbutton .cvspan::before {
+  left: 0;
+  top: 0;
+}
+.cvbutton .cvspan::after {
+  right: 0;
+  bottom: 0;
+}
+.cvbutton:hover::before,
+.cvbutton:hover::after {
+  transition-delay: 0s;
+}
+.cvbutton:hover .cvspan::before,
+.cvbutton:hover .cvspan::after {
+  transition-delay: 0.2s;
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-size: auto 100%;
+  }
+  .aboutme-main-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutme-content {
+    margin: 5px;
+    padding: 5px;
+  }
+  .aboutme-main-section img {
+    height: 300px;
+    display: flex;
+    margin: 35px;
+  }
+  .row-1 {
+    font-size: 45px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .row-2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .row-3 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .aboutme-info1,
+  .aboutme-info2 {
+    width: 100%;
+    font-size: 15px;
+  }
+  .aboutme-info1 {
+    padding-left: 25px;
+  }
+  .downloadbtn {
+    padding: 0;
+  }
+  .cvbutton {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+  }
+}

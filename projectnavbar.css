@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Onest:wght@200;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header,
+li,
+a,
+button {
+  font-family: "Inconsolata", monospace;
+  font-size: 22px;
+  color: black;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+nav {
+  margin: 0 auto;
+}
+.project-logo {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+}
+.project-navbar {
+  list-style: none;
+}
+.project-navbar li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.project-navbar i {
+  padding: 5px;
+}
+.dropbtn {
+  background-color: transparent;
+  padding: 15px 45px 15px 45px;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  padding-right: 20px;
+  right: 0;
+  transition: all 0.3s ease 0s;
+}
+.dropdown i {
+  padding-right: 5px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 180px;
+  z-index: 1;
+  right: 15px;
+  transition: all 0.3s ease 0s;
+}
+.dropdown-content a:hover {
+  border-bottom: solid rgb(0, 0, 0) 1px;
+}
+.dropdown-content a {
+  transition-duration: 0.2s;
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content i {
+  padding: 5px;
+}

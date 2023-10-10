@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  font-size: 22px;
+  font-weight: 200px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a,
+.dropbtn {
+  font-family: "Inconsolata", monospace;
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+nav {
+  margin: 0 auto;
+}
+.logo {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+}
+.navbtn {
+  background-color: transparent;
+  border: none;
+  margin: 15px 40px 15px 40px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.dropbtn {
+  background-color: transparent;
+  margin: 15px 45px 15px 45px;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  padding-right: 15px;
+  right: 0;
+}
+.dropdown i {
+  padding: 5px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 180px;
+  z-index: 1;
+  right: 15px;
+}
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  border-bottom: solid white 1px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content i {
+  padding: 5px;
+}
+
+@media screen and(max-width:800px) {
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopperóra</title>
+    <link rel="stylesheet" href="stopwatch.css" />
+    <link rel="icon" type="image/x-icon" href="/images/stopwatchfavicon.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inconsolata&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/74b1a80a67.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <div class="container">
+      <h1>Stopperóra</h1>
+      <div id="time">
+        <span class="digit" id="hr"> 00</span>
+        <span class="txt">Óra</span>
+        <span class="digit" id="min"> 00</span>
+        <span class="txt">Perc</span>
+        <span class="digit" id="sec"> 00</span>
+        <span class="txt">Mp</span>
+        <span class="digit" id="count"> 00</span>
+      </div>
+      <div id="buttons">
+        <button class="btn" id="start">Start</button>
+        <button class="btn" id="stop">Stop</button>
+        <button class="btn" id="reset">Reset</button>
+      </div>
+    </div>
+    <div class="footer">
+      <img src="/images/stopwatchalairas.png" />
+    </div>
+    <script src="stopwatch.js"></script>
+    <script>
+      $("header").load("projectnavbar.html");
+    </script>
+  </body>
+</html>
