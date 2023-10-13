@@ -39,6 +39,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 .lineup {
   animation: 2s anim-lineUp ease-out;

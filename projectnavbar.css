@@ -82,3 +82,24 @@ nav {
 .dropdown-content i {
   padding: 5px;
 }
+.hamburger-menu {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .dropdown {
+    display: none;
+  }
+  nav {
+    margin: 0 60px;
+    padding-left: 42px;
+  }
+  .project-logo {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+  }
+  .hamburger-menu {
+    display: block;
+    font-size: 36px;
+  }
+}

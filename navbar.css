@@ -48,6 +48,7 @@ nav {
   display: inline-block;
   padding-right: 15px;
   right: 0;
+  top: 10px;
 }
 .dropdown i {
   padding: 5px;
@@ -74,6 +75,43 @@ nav {
 .dropdown-content i {
   padding: 5px;
 }
+.hamburger-menu {
+  display: none;
+}
 
-@media screen and(max-width:800px) {
+@media screen and (max-width: 800px) {
+  header {
+    height: 70px;
+  }
+  .hamburger-menu {
+    position: absolute;
+    display: block;
+    font-size: 48px;
+    color: white;
+    cursor: pointer;
+    right: 25px;
+    top: 10px;
+  }
+
+  .logo {
+    top: 5px;
+    width: 100px;
+    height: 60px;
+  }
+  .navigation-bar {
+    position: relative;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .dropdown {
+    display: none;
+  }
+  .navigation-bar {
+    display: none;
+  }
 }

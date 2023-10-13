@@ -27,6 +27,7 @@ body {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around;
+  overflow: hidden;
 }
 .aboutme-main-section img {
   height: 600px;
@@ -171,13 +172,13 @@ body {
     margin: 35px;
   }
   .row-1 {
-    font-size: 45px;
+    font-size: 32px;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
   }
   .row-2 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
   }
   .row-3 {
